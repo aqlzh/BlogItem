@@ -7,7 +7,7 @@ Personal blog construction
 
 
 
-![blog1](C:\Users\Administrator\Desktop\blog1.jpg)
+![](C:\Users\Administrator\Desktop\blog1.jpg)
 
 
 
