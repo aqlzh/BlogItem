@@ -7,7 +7,7 @@ Personal blog construction
 
 
 
-![](C:\Users\Administrator\Desktop\blog1.jpg)
+![](https://github.com/aqlzh/BlogItem/blob/main/img/blog1.jpg)
 
 
 
@@ -17,7 +17,7 @@ Personal blog construction
 
 
 
-![](C:\Users\Administrator\Desktop\blog2.jpg)
+![](https://github.com/aqlzh/BlogItem/blob/main/img/blog2.jpg)
 
 
 
@@ -25,10 +25,10 @@ Personal blog construction
 
 
 
-![](C:\Users\Administrator\Desktop\blog3.jpg)
+![](https://github.com/aqlzh/BlogItem/blob/main/img/blog3.jpg)
 
 ## 归档页面
 
 
 
-![](C:\Users\Administrator\Desktop\blog4.jpg)
+![](https://github.com/aqlzh/BlogItem/blob/main/img/blog4.jpg)
