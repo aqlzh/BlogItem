@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!--<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>LZH_Create</title>
+<!--    <title>关于我</title>-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.css">
+<!--    <link rel="stylesheet" href="../static/css/me.css">-->
+
+<!--    <link rel="stylesheet" href="/css/me.css" th:href=@{/css/me.css}" />-->
+    <link rel="stylesheet" type="text/css" href="css/me.css" th:href="@{/css/me.css}" />
+</head>
+<body>
+
+<!--<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>-->
+<!--<script src="../static/js/jquery.min.js"></script>-->
+<script src="/js/jquery.min.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"
+        integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw=="
+        crossorigin="anonymous"></script>
+
+<!--导航-->
+<nav class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+    <div class="ui container">
+        <div class="ui inverted stackable menu">
+            <h2 class="ui teal header item">QuantumYou</h2>
+            <a href="#" class=" m-item item m-mobile-hide"><i class="icon home"></i>首页</a>
+            <a href="#" class=" m-item item m-mobile-hide"> <i class="icon server"></i>分类</a>
+            <a href="#" class=" m-item item m-mobile-hide"> <i class="icon tags"></i>标签</a>
+            <a href="#" class=" m-item item m-mobile-hide active"><i class="icon address card"></i>关于我</a>
+            <a href="#" class=" m-item item m-mobile-hide"><i class="icon music"></i>音乐盒</a>
+            <a href="#" class=" m-item item m-mobile-hide"><i class="icon clipboard"></i>留言板</a>
+            <a href="#" class=" m-item item m-mobile-hide"><i class="icon image"></i>照片墙</a>
+            <div class="right item m-mobile-hide">
+                <div class="ui icon inverted transparent input">
+                    <input type="text" placeholder="搜索">
+                    <i class="search link icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="ui black icon button m-right-top m-mobile-show menu toggle">
+        <i class="sidebar icon "></i>
+    </a>
+</nav>
+
+<!--中间内容-->
+<div class="m-container m-padded-tb-big">
+    <div class="ui container">
+        <div class="ui stackable grid">
+            <div class="eleven wide column">
+<!--                <img src="/images/me.jpg" alt="" class="ui rounded image">-->
+<!--                <img src="../static/images/me.jpg" th:src="@{/static/images/me.jpg}" alt="" class="ui rounded image">-->
+                <img src="/images/me.jpg" alt="" class="ui rounded image" style="width: 1120px!important; ">
+            </div>
+            <div class="five wide column">
+                <div class="ui top attached segment">
+                    <div class="ui header">关于我</div>
+                </div>
+                <div class="ui attached segment">
+                    <p class="m-text">目前为软件工程本科生，追求理论与实践相结合的学习者，兴趣爱好广泛，乐观开朗，积极向上，热爱生活，希望结识共同成长的小伙伴~</p>
+                    <p class="m-text">主要学习领域：前后端开发，运维，数据结构与算法，大数据。</p>
+                </div>
+                <div class="ui attached segment">
+                    <div class="ui orange basic left pointing label margin-tb-tiny">编程</div>
+                    <div class="ui orange basic left pointing label margin-tb-tiny">阅读</div>
+                    <div class="ui orange basic left pointing label margin-tb-tiny">写作</div>
+                    <div class="ui orange basic left pointing label margin-tb-tiny">绘画</div>
+                    <div class="ui orange basic left pointing label margin-tb-tiny">运动</div>
+                    <div class="ui orange basic left pointing label margin-tb-tiny">听歌</div>
+                    <div class="ui orange basic left pointing label margin-tb-tiny">下棋</div>
+                    <div class="ui orange basic left pointing label margin-tb-tiny">旅游</div>
+                </div>
+                <div class="ui attached segment">
+                    <div class="ui teal basic left pointing label margin-tb-tiny">Java</div>
+                    <div class="ui teal basic left pointing label margin-tb-tiny">MySQL</div>
+                    <div class="ui teal basic left pointing label margin-tb-tiny">Vue</div>
+                    <div class="ui teal basic left pointing label margin-tb-tiny">Node</div>
+                    <div class="ui teal basic left pointing label margin-tb-tiny">Linux</div>
+                    <div class="ui teal basic left pointing label margin-tb-tiny">Jquery</div>
+                    <div class="ui teal basic left pointing label margin-tb-tiny">C语言</div>
+                    <div class="ui teal basic left pointing label margin-tb-tiny">运维</div>
+                    <div class="ui teal basic left pointing label margin-tb-tiny">数据结构与算法</div>
+                    <div class="ui teal basic left pointing label margin-tb-tiny">网页开发</div>
+                </div>
+
+                <div class="ui bottom attached segment">
+                    <a href="#" class="ui circular icon button"><i class="github icon"></i></a>
+                    <a href="#" class="ui wechat circular icon button"><i class="weixin icon"></i></a>
+                    <a href="#" class="ui qq circular icon button" data-content="123456"
+                       data-position="bottom center"><i class="qq icon"></i></a>
+                    <a href="#" class="ui circular icon button "><i class="weibo icon"></i></a>
+                </div>
+                <div class="ui wechat-qr flowing popup transition hidden">
+                    <img src="/images/wechat.jpg" alt="" class="ui rounded image" style="width: 110px">
+<!--                    <img src="/images/wechat.jpg" alt="" class="ui rounded image" style="width: 110px">-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--底部栏-->
+<footer class="ui inverted vertical segment m-padded-tb-massive">
+    <div class="ui container">
+        <div class="ui stackable grid">
+            <div class="three wide column">
+<!--                <img src="../static/images/wechat.jpg" class="ui rounded image" style="width: 120px"/>-->
+                <img src="/images/wechat.jpg" class="ui rounded image" style="width: 120px"/>
+            </div>
+
+            <div class="three wide column">
+                <h4 class="ui inverted header lzh-center">学习指北</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item lzh-center">JAVA 从入门到放弃</a>
+                    <a href="#" class="item lzh-center">JAVA 从入门到放弃</a>
+                    <a href="#" class="item lzh-center">JAVA 从入门到放弃</a>
+                </div>
+            </div>
+            <div class="three wide column ">
+                <h4 class="ui inverted header lzh-center text-thin m-text-spaced">最新推荐</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item lzh-center">MySQL 从入门到删库</a>
+                    <a href="#" class="item lzh-center">MySQL 从入门到删库</a>
+                    <a href="#" class="item lzh-center">MySQL 从入门到删库</a>
+                </div>
+            </div>
+            <div class="six wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced">引言</h4>
+                <p class="m-text-thin m-text-spaced m-opacity-mini">
+                    编程路漫之远兮，运架构体之帷幄；<br>
+                    劝君专注案前事，亦是杯酒敬苍生；
+                </p>
+            </div>
+        </div>
+        <div class="ui inverted section divider"></div>
+        <p class="m-text-thin m-text-spaced m-opacity-mini lzh-center">Copyright © LZH_Create</p>
+    </div>
+</footer>
+<script>
+    $('.menu.toggle').click(function () {
+        $('.m-item').toggleClass('m-mobile-hide');
+    });
+
+    $('.wechat').popup({
+        popup: $('.wechat-qr'),
+        position: 'bottom center'
+    });
+
+    $('.qq').popup();
+</script>
+</body>
+</html>

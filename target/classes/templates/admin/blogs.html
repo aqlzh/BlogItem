@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>博客管理</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.css">
+    <link rel="stylesheet" href="../static/css/me.css">
+</head>
+<body>
+
+<!--<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>-->
+<script src="../static/js/jquery.min.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"
+        integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw=="
+        crossorigin="anonymous"></script>
+
+<!--导航-->
+<nav class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+    <div class="ui container">
+        <div class="ui inverted stackable menu">
+            <h2 class="ui teal header item">管理后台</h2>
+            <a href="#" class=" m-item item m-mobile-hide"><i class="icon home"></i>博客</a>
+            <a href="#" class=" m-item item m-mobile-hide"> <i class="icon server"></i>分类</a>
+            <a href="#" class=" m-item item m-mobile-hide"> <i class="icon tags"></i>标签</a>
+
+            <div class="right m-item m-mobile-hide menu">
+                <div class="ui dropdown item">
+                    <div class="text">
+                        <img src="https://unsplash.it/100/100?image=1005" alt="" class="ui avatar image">
+                        李志鸿
+                    </div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <a href="#" class="item">注销</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="ui black icon button m-right-top m-mobile-show menu toggle">
+        <i class="sidebar icon "></i>
+    </a>
+</nav>
+
+<div class="ui attached pointing menu">
+    <div class="ui container">
+        <div class="right menu">
+            <a href="#" class="item">发布</a>
+            <a href="#" class="active item">列表</a>
+        </div>
+    </div>
+</div>
+<!--中间内容-->
+<div class="m-container-small m-padded-tb-big">
+    <div class="ui container">
+        <form action="#" method="post" class="ui segment form">
+            <div class="inline fields">
+                <div class="field">
+                    <input type="text" name="title" placeholder="标题">
+                </div>
+
+                <div class="field">
+                    <div class="ui selection dropdown">
+                        <input type="hidden" name="type">
+                        <i class="dropdown icon"></i>
+                        <div class="default text">分类</div>
+                        <div class="menu">
+                            <div class="item" data-value="1">错误日志</div>
+                            <div class="item" data-value="2">开发手册</div>
+                            <div class="item" data-value="3">阶段学习</div>
+                            <div class="item" data-value="4">实用技巧</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui checkbox">
+                        <input type="checkbox" id="recommend" name="recommend">
+                        <label for="recommend">推荐</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <button class="ui mini teal basic button"><i class="search icon"></i>搜索</button>
+                </div>
+            </div>
+        </form>
+        <table class="ui table celled">
+            <thead>
+            <tr>
+                <th></th>
+                <th>标题</th>
+                <th>类型</th>
+                <th>推荐</th>
+                <th>更新时间</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>数据库设计</td>
+                <td>技术客栈</td>
+                <td>是</td>
+                <td>2020-09-13</td>
+                <td>
+                    <a href="#" class="ui mini teal button">编辑</a>
+                    <a href="#" class="ui mini red button">删除</a>
+                </td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <th colspan="6">
+                    <div class="ui pagination menu">
+                        <a href="#" class="item">上一页</a>
+                        <a href="#" class="item">下一页</a>
+                    </div>
+                    <a href="#" class="ui mini teal basic button right floated">新增</a>
+                </th>
+            </tr>
+            </tfoot>
+        </table>
+    </div>
+</div>
+
+<!--底部栏-->
+<footer class="ui inverted vertical segment m-padded-tb-massive">
+    <div class="ui container">
+        <div class="ui stackable grid">
+            <div class="three wide column">
+                <img src="../static/images/wechat.jpg" class="ui rounded image" style="width: 120px"/>
+            </div>
+
+            <div class="three wide column">
+                <h4 class="ui inverted header lzh-center">学习指北</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item lzh-center">JAVA 从入门到放弃</a>
+                    <a href="#" class="item lzh-center">JAVA 从入门到放弃</a>
+                    <a href="#" class="item lzh-center">JAVA 从入门到放弃</a>
+                </div>
+            </div>
+            <div class="three wide column ">
+                <h4 class="ui inverted header lzh-center text-thin m-text-spaced">最新推荐</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item lzh-center">Mysql 从入门到跑路</a>
+                    <a href="#" class="item lzh-center">Mysql 从入门到跑路</a>
+                    <a href="#" class="item lzh-center">Mysql 从入门到跑路</a>
+                </div>
+            </div>
+            <div class="six wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced">引言</h4>
+                <p class="m-text-thin m-text-spaced m-opacity-mini">
+                    编程路漫之远兮，运架构体之帷幄；<br>
+                    劝君专注案前事，亦是杯酒敬苍生；
+                </p>
+            </div>
+        </div>
+        <div class="ui inverted section divider"></div>
+        <p class="m-text-thin m-text-spaced m-opacity-mini lzh-center">Copyright © LZH_Create</p>
+    </div>
+</footer>
+<script>
+    $('.menu.toggle').click(function () {
+        $('.m-item').toggleClass('m-mobile-hide');
+    });
+    $('.ui.dropdown').dropdown({
+        on: 'hover'
+    })
+</script>
+</body>
+</html>

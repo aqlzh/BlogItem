@@ -1,0 +1,36 @@
+spring:
+  thymeleaf:
+    mode: HTML
+    cache: false
+  profiles:
+    active: dev
+
+  resources:
+    add-mappings: true
+
+
+
+
+
+
+
+
+
+
+
+#datasource:
+#  driver-class-name: com.mysql.jdbc.Driver
+#  url: jdbc:mysql://112.74.96.104:3308/blog?useUnicode=true&characterEncoding=utf-8
+#  username: root
+#  password: rootlzh
+#jpa:
+#  hibernate:
+#    ddl-auto: update
+#  show-sql: true
+#
+#logging:
+#  level:
+#    root: info
+#    com.lzh: debug
+#   file: log/blog.log
+
