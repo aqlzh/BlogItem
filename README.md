@@ -1,7 +1,7 @@
 # BlogItem
 Personal blog construction
 
-Base on Spring Boot
+Base on Spring Boot Skills
 
 ## 个人页面
 
