@@ -3,6 +3,8 @@ Personal blog construction
 
 Base on Spring Boot Skills
 
+[参考视频](https://www.bilibili.com/video/BV1KJ411R7XL?p=1)
+
 ## 个人页面
 
 
